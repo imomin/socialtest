@@ -17,6 +17,10 @@ app.get('/webhook', (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.status(200).send("OK");
+});
+
 /* Handling all messenges */
 app.post('/webhook', (req, res) => {
   console.log(req.body);
