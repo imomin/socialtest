@@ -23,11 +23,12 @@ app.get('/', (req, res) => {
 app.post('/webhook', (req, res) => {
   console.log(req.body);
   if (req.body.object === 'page') {
-    req.body.entry.forEach((entry) => {
-      entry.messaging.forEach((event) => {
-        console.log(JSON.stringify(event));
-      });
-    });
+    console.log(JSON.stringify(req.body));
+    // req.body.entry.forEach((entry) => {
+    //   entry.messaging.forEach((event) => {
+    //     console.log(JSON.stringify(event));
+    //   });
+    // });
     res.status(200).end();
   }
 });
