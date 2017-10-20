@@ -1,5 +1,5 @@
 {
-  "name": "heroku test",
+  "name": "heroku_test",
   "version": "0.0.1",
   "description": "A sample Node.js app using Express 4",
   "engines": {
